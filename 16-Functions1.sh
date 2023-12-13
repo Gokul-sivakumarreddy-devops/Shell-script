@@ -10,7 +10,7 @@ if [ $1 -ne 0 ]     #$? --> if success, it has 0, if failed not zero
      echo "ERROR: $2... Installation failed"
      exit 1
    else
-      echo "$2...Git Installation is successful"
+      echo "$2...Installation is successful"
 fi      
 }
 
