@@ -8,7 +8,7 @@ read -s USERNAME        # The value entered above will be automatically atteched
 
 echo "Please enter your password"
 read -s PASSWORD
-echo "User password is : $PASSWORD"
+
 
 
 
