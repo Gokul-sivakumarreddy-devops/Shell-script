@@ -5,12 +5,12 @@ ID=$(id -u)
 VALIDATE() 
 {
 
-if [ $2 -ne 0 ]     #$? --> if success, it has 0, if failed not zero
+if [ $1 -ne 0 ]     #$? --> if success, it has 0, if failed not zero
    then
-     echo "ERROR: Git Installation failed"
+     echo "ERROR: $2... Installation failed"
      exit 1
    else
-      echo "Git Installation is successful"
+      echo "$2...Git Installation is successful"
 fi      
 }
 
