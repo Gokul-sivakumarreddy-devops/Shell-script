@@ -9,4 +9,6 @@ if [ $ID -ne 0]
      echo "user has root access"
 
 sudo yum install -y
+
+fi
       
