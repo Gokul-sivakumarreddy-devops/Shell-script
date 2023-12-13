@@ -16,10 +16,10 @@ if [ $ID -ne 0 ]
   then 
     echo "ERROR: user do not have root access"
     exit 1
-   else
+  else
      echo "user has root access"
 
-     fi    # fi means reverse of if, indicating condition end
+fi    # fi means reverse of if, indicating condition end
 
 sudo yum install mysql -y   
 VALIDATE  
