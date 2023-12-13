@@ -11,6 +11,7 @@ if [ $? -ne 0 ]     #$? --> if success, it has 0, if failed not zero
    else
       echo "Installation is successful"
 }
+fi
 
 if [ $ID -ne 0 ]
   then 
