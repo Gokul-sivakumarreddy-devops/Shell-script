@@ -8,7 +8,7 @@ if [ $ID -ne 0]
    else
      echo "user has root access"
 
-sudo yum install -y
+sudo yum install mysql -y
 
 fi
       
