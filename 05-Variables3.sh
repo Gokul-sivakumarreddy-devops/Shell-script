@@ -2,4 +2,4 @@
 
 DATE=$(date)
 
-echo "Sceipt started executing : $DATE"     # we can also give ${DATE}
+echo "Script started executing : $DATE"     # we can also give ${DATE}
