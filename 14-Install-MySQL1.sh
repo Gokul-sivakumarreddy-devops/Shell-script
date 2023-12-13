@@ -11,7 +11,7 @@ if [ $ID -ne 0 ]
 
      fi    # fi means reverse of if, indicating condition end
 
-sudo yum install mysql123 -y
+sudo yum install mysql -y
 
 if [ $? -ne 0 ]     #$? --> if success, it has 0, if failed not zero
    then
@@ -21,5 +21,17 @@ if [ $? -ne 0 ]     #$? --> if success, it has 0, if failed not zero
       echo "MySQL installation successfully installed"
 
 
-fi  
+fi
+
+sudo yum install git -y
+
+if [ $? -ne 0 ]     #$? --> if success, it has 0, if failed not zero
+   then
+     echo "ERROR: git installation failed"
+     exit 1
+   else
+      echo "git installation successfully installed"
+
+
+fi
       
