@@ -1,7 +1,9 @@
 #!/bin/bash
 
-PERSON1=Ramesh
-PERSON2=Suresh
+# If we want to change names, we can modify at PERSON1=Ramesh and PERSON2=Suresh
+
+PERSON1=Ram
+PERSON2=Sam
 
 echo "$PERSON1: Hello $PERSON2, Good Morning"
 echo "$PERSON2: Hi $PERSON1, Very Good Morning"
