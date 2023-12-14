@@ -23,12 +23,12 @@ if [ $ID -ne 0 ]
     echo "ERROR: user do not have root access"
     exit 1
   else
-     echo "user has root access"
+     echo "you are a root user"
 
 fi    # fi means reverse of if, indicating condition end
 
 sudo yum install mysql -y &>> $LOGFILE
 VALIDATE $? "Installing MySQL"
-sudo yum install git -y
-VALIDATE $? "Installing Git" &>> $LOGFILE
+sudo yum install git -y &>> $LOGFILE
+VALIDATE $? "Installing Git" 
 
