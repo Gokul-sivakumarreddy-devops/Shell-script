@@ -16,7 +16,7 @@ VALIDATE()
 
 if [ $1 -ne 0 ]     #$? --> if success, it has 0, if failed not zero
    then
-     echo -e "ERROR :  $2... $R Installation failed $N"
+     echo -e "ERROR :  $2... $R Installation failed $N"  # -e --> for enabling colour
      exit 1
    else
       echo -e "$2... $G Installation is successful $N"
