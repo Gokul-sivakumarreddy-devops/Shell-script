@@ -15,5 +15,5 @@ if [ $ID -ne 0 ]
 
 fi
 
-echo "All arguments passed : $@"
+echo "All arguments passed: $@"
  
