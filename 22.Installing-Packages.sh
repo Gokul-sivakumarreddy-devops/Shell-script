@@ -42,7 +42,6 @@ if [ $? -ne 0 ]
 else
   echo -e "$package is already installed...$Y SKIPPING $N"   
 fi
-done   
-     
+done 
   
  
