@@ -13,4 +13,4 @@ do
   then 
     message+="High Disk Usage on $partition: $usage"
   fi
-done >>> $DISK_USAGE
+done <<< $DISK_USAGE
