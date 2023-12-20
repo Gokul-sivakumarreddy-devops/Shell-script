@@ -1,0 +1,19 @@
+-name: play to installapachehosts:devops
+become: true
+user:singam
+tasks:
+-name: Install
+ http package
+ yum:name: httpd
+ state: present
+ -name: Downloadhttpd.confget_
+ url:url:https://artifact/singam/httpd.conf.j2
+ dest: /etc/httpd/conf/httpd.conf
+ force: yes-name: createindex.htmllinein
+ file:path: /var/www/html/index.html
+ line: "Hello from {{ansible_hostname}}"
+ create: yes
+ -name: start and enable httpdservice:
+ name: httpd
+ state: started
+ enabled: true
