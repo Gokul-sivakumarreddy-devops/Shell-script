@@ -16,3 +16,4 @@ do
 done <<< $DISK_USAGE
 
 echo -e "Message: $message"
+echo "This is a test mail & Date $(date)" | mail -s "message" gokulkumar0307@gmail.com
